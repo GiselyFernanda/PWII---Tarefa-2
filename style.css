@@ -1,0 +1,47 @@
+@import url('https://fonts.google.com/specimen/Merriweather?preview.text_type=custom&selection.family=Merriweather');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .MN {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 5rem;
+    color: #000000;
+    border: 1rem double  rgba(255, 255, 255, 0.932);
+    padding: 2rem 4rem;
+  }
+
+  .G {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+    background: linear-gradient(45deg, #440a67, #93329e, #b4aee8, #ffe3fe);
+    background-size: 190% 250%;
+    animation: colors 15s ease infinite;
+  }
+
+  @keyframes colors {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .MN {
+      font-size: 2.5rem;
+      padding: 2rem 3rem;
+    }
+  }
